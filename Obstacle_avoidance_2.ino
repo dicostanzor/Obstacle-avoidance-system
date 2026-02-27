@@ -1,12 +1,11 @@
 /*
-  HC-SR04 + 28BYJ-48 (ULN2003) scanner head
   Behavior:
   - Start at "CENTER" (whatever direction the stepper is facing at power-up)
   - If obstacle is within THRESH_CM, rotate RIGHT until obstacle is no longer detected
   - Uses HALF-STEP sequence (more torque, less vibration)
 
   Wiring:
-  HC-SR04: TRIG -> D12, ECHO -> D7
+  Sensor: TRIG -> D12, ECHO -> D7
   ULN2003: IN1  -> D8,  IN2  -> D9, IN3 -> D10, IN4 -> D11
 */
 
